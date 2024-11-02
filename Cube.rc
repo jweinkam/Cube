@@ -1,0 +1,238 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Cube.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Cube.ico"
+IDR_CubeTYPE            ICON                    "res\\CubeDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Less\t-",                     ID_EDIT_LESS
+        MENUITEM "More\t=",                     ID_EDIT_MORE
+        MENUITEM "Scramble\tCtrl+S",            ID_EDIT_SCRAMBLE
+        MENUITEM "Solve\tCtrl+L",               ID_EDIT_SOLVE
+        MENUITEM "Redo\tCtrl+R",                ID_EDIT_REDO
+        MENUITEM "Open\tCtrl+O",                ID_EDIT_OPEN
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "RotateX\tCtrl+X",             ID_VIEW_ROTATEX
+        MENUITEM "Rotate-X\tAlt+X",             ID_VIEW_ROTATECX
+        MENUITEM "Rotate&Y\tCtrl+Y",            ID_VIEW_ROTATEY
+        MENUITEM "Rotate-Y\tAlt+Y",             ID_VIEW_ROTATECY
+        MENUITEM "Rotate&Z\tCtrl+Z",            ID_VIEW_ROTATEZ
+        MENUITEM "Rotate-Z\tAlt+Z",             ID_VIEW_ROTATECZ
+    END
+    POPUP "Speed"
+    BEGIN
+        MENUITEM "&Slower\tCtrl+-",             ID_SPEED_SLOWER
+        MENUITEM "&Faster\tCtrl++",             ID_SPEED_FASTER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Cube.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Cube.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "-",            ID_EDIT_LESS,           ASCII,  NOINVERT
+    "=",            ID_EDIT_MORE,           ASCII,  NOINVERT
+    "R",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_EDIT_SCRAMBLE,       VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_EDIT_SOLVE,          VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_PLUS,    ID_SPEED_FASTER,        VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_MINUS,   ID_SPEED_SLOWER,        VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_VIEW_ROTATECX,       VIRTKEY, ALT, NOINVERT
+    "Y",            ID_VIEW_ROTATECY,       VIRTKEY, ALT, NOINVERT
+    "Z",            ID_VIEW_ROTATECZ,       VIRTKEY, ALT, NOINVERT
+    "X",            ID_VIEW_ROTATEX,        VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_VIEW_ROTATEY,        VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_VIEW_ROTATEZ,        VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_EDIT_OPEN,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Cube\n\nCube\n\n\nCube.Document\nCube.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Cube"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_ROTATEX         "Rotate the whole cube counter clockwise around the X axis"
+    ID_VIEW_ROTATECX        "Rotate the whole cube clockwise around the X axis"
+    ID_VIEW_ROTATEY         "Rotate the whole cube counter clockwise around the Y axis"
+    ID_VIEW_ROTATECY        "Rotate the whole cube clockwise around the Y axis"
+    ID_VIEW_ROTATEZ         "Rotate the whole cube counter clockwise around the Z axis"
+    ID_VIEW_ROTATECZ        "Rotate the whole cube clockwise around the Z axis"
+    ID_EDIT_LESS            "Make the cube smaller"
+    ID_EDIT_MORE            "Make the cube larger"
+    ID_EDIT_SCRAMBLE        "Randomly scramble the cube"
+    ID_SPEED_SLOWER         "Set the animation speed slower"
+    ID_SPEED_FASTER         "Set the animation speed faster"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Cube.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
